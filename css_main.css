@@ -1,0 +1,238 @@
+/*The logo and the img which are static together with the nav bar*/
+html {
+  scroll-behavior: smooth;
+}
+body{
+    font-family: monospace;
+}
+.logo_img{
+    width: 100%;
+    height: 565px;
+    position: sticky;
+    
+}
+.logo_text{
+    color: white;
+    position: absolute;
+    top: -35px;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'FashionVictim' !important;
+}
+.quote_text{
+    background-color: none;
+    color: white;
+    position: absolute;
+    top: 260px;
+    left:820px;
+    font-size: 2px;
+    font-family: 'FashionVictim' !important;
+    transition: 0.5s all ease-in-out;
+}
+.quote_text:hover{
+    transform: scale(15.1);
+}
+
+
+.scroll{
+    position: relative;
+    top:-23px;
+    height:55px;
+    color: black;
+    background-color: #a9d3ee;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bolder;
+}
+/*this nav bar code*/
+nav{
+    position: relative;
+    top: -62px;
+    width:100%;
+    height: 55px;
+    background-color: #d0dde7;
+    font-size: 0;
+}
+.ii {
+    text-align: center; 
+    line-height: 40px;
+    height:100%;
+}
+nav a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #747575;
+    font-family: 'FashionVictim' !important;
+    transition: 0.3s all ease-in-out;
+    padding: 9px 16px;
+}
+nav a:hover{
+    color: black;
+    background-color: #b0cbdc;
+}
+.dark-mode {
+  background-color: #1d1d1c;
+  color: white;
+}
+.dark_button{
+    font-size: 17px;
+    border: 0px;
+    background-color: #d0dde7;
+    color: #747575;
+    font-family: 'FashionVictim' !important;
+    transition: 0.3s all ease-in-out;
+    padding: 9px 16px;
+}
+.dark_button:hover{
+    color: black;
+    background-color: #b0cbdc;
+}
+
+.ma_def{
+    position: relative;
+    top:-70px;
+    font-size: 20px;
+    margin-left: 320px;
+    margin-right: 310px;
+    font-family:Goudy Old Style;
+}
+.row_first{
+    position: relative;
+    top:-80px;
+}
+.left{
+    position: relative;
+    padding-left: 10px;
+    padding-right: 50px;
+    margin-top: 20px;
+}
+#dykt{
+    font-size: 15px;
+    font-family:Goudy Old Style;
+    font-weight: bold;
+}
+.dykt1:after{
+    content: "Karate Belts go from lighter to darker colors as you rank up since Japan was poor during World War II, and dyeing the belts were cheaper than getting new ones.";
+    font-size: 15px;
+    font-family:Goudy Old Style;
+    font-weight: bold;
+}
+.wirdly{
+    font-size: 20px;
+    font-family:Goudy Old Style;
+}
+.left{
+    position: relative;
+    top:-25px;
+    float:left;
+    width: 24.6%;
+}
+.right{
+    width:75%;
+}
+
+.row_first:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#def{
+    padding-top: 10px;
+    font-size: 40px;
+    color: #747575;
+    font-family: 'FashionVictim' !important;
+}
+.row{
+    position: relative;
+    top:-160px;
+    background-color: #d0dde7;
+    border-bottom: 2px solid #bcd2e0;
+    border-right: 2px solid #bcd2e0;
+}
+.colum{
+    float:left;
+    width:33%;
+    text-align: center;
+    border-right: 2px solid #bcd2e0;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.circle{
+    font-family: 'FashionVictim' !important;
+    position:relative;
+    top:-20px;
+    left:38%;
+    font-size: 60px;
+    border: 2px solid #b0cbdc;
+    background-color: #b0cbdc;
+    height:70px;
+    border-radius:100%;
+    width:70px;
+}
+.tittle{
+    position:relative;
+    top:-100px;
+    text-align: center;
+    font-size:25px;
+    font-family: 'FashionVictim' !important;
+}
+.font{
+    position:relative;
+    top:-105px;
+    font-size:18px;
+    text-align: center;
+    font-family: monospace;
+}
+.photo{
+    position:relative;
+    top:30px;
+}
+
+.faq{
+    font-size: 30px;
+    text-align: center;
+}
+.faq1{
+    font-size: 18px;
+    margin-left: 170px;
+    margin-right: 170px;
+}
+.faq_div{
+    position: relative;
+    top:-100px;
+    font-family:monospace;
+}
+
+.news{
+    position: relative;
+    top: -80px;
+    background-color: #d0dde7;
+}
+.foot{
+    background-image:url(istockphoto-1332097112-170667a.jpg)
+}
+.hed{
+    text-align: center;
+    color: white;
+    font-family: 'FashionVictim' !important;
+}
+.fb{
+    width:40px;
+    height: 40px;
+    border-radius: 10px;
+}
+.footer_img{
+    text-align: center;
+}
+.fp{
+    color:white;
+    text-align: center;
+    font-family: monospace;
+}

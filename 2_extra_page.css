@@ -1,0 +1,442 @@
+/*The logo and the img which are static together with the nav bar*/
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: monospace;
+}
+.logo_img{
+    width: 100%;
+    height: 565px;
+    position: sticky;
+}
+.logo_text{
+    color: white;
+    position: absolute;
+    top: -35px;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'FashionVictim' !important;
+}
+.quote_text{
+    background-color: none;
+    color: white;
+    position: absolute;
+    top: 260px;
+    left:820px;
+    font-size: 2px;
+    font-family: 'FashionVictim' !important;
+    transition: 0.5s all ease-in-out;
+}
+.quote_text:hover{
+    transform: scale(15.1);
+}
+
+.scroll{
+    position: relative;
+    top:-23px;
+    height:55px;
+    color: black;
+    background-color: #a9d3ee;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bolder;
+}
+/*this nav bar code*/
+nav{
+    position: relative;
+    top: -62px;
+    width:100%;
+    height: 55px;
+    background-color: #d0dde7;
+    font-size: 0;
+}
+.ii {
+    text-align: center; 
+    line-height: 40px;
+    height:100%;
+}
+nav a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #747575;
+    font-family: 'FashionVictim' !important;
+    transition: 0.3s all ease-in-out;
+    padding: 9px 16px;
+}
+nav a:hover{
+    color: black;
+    background-color: #b0cbdc;
+}
+.dark-mode {
+  background-color: #1d1d1c;
+  color: white;
+}
+.dark_button{
+    font-size: 17px;
+    border: 0px;
+    background-color: #d0dde7;
+    color: #747575;
+    font-family: 'FashionVictim' !important;
+    transition: 0.3s all ease-in-out;
+    padding: 9px 16px;
+}
+.dark_button:hover{
+    color: black;
+    background-color: #b0cbdc;
+}
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin-top: -30px;
+    margin-left: -170px;
+}
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    background-color: #a9d3ee;
+    top: 0;
+    bottom: 0;
+    top:20px;
+    left: 43.4%;
+}
+/* Container around content */
+.container {
+    padding: 1px 43px;
+    position: relative;
+    width: 50%;
+}
+/* The circles on the timeline */
+.container::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    right: -17px;
+    background-color: #b0cbdc;
+    border: 8px solid #b0cbdc;
+    top: 14px;
+    border-radius: 50%;
+    z-index: 1;
+}
+/* Place the container to the right */
+.right {
+    left: 44%;
+}
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    width: 0;
+    z-index: 1;
+    top: 8px;
+    left: 20px;
+    border: medium solid black;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent #a9d3ee transparent;
+}
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+/* The actual content */
+.content {
+    top: -0px;
+    padding: 20px 30px;
+    background-color: #b0cbdc;
+    position: relative;
+    font-family: monospace;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.timepara{
+    position: relative;
+    font-family: FashionVictim;
+    font-size: 30px;
+    top: -20px;
+}
+
+.news{
+    position: relative;
+    top: -40px;
+    background-color: #d0dde7;
+}
+#def{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 40px;
+    color: #747575;
+    font-family: 'FashionVictim' !important;
+}
+.slider {
+    width: 100%;
+    background-color: #d0dde7;
+}
+.slider input {
+  display: none;
+}
+.pics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 350px;
+  perspective: 1000px;
+  overflow: hidden;
+}
+.title{
+    text-align: center;
+    font-size:50px;
+    color:#747575;
+    font-family: 'FashionVictim' !important;
+}
+.lab {
+  top: -2px;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #b0cbdc;
+  padding: 30px;
+  width: 350px;
+  text-align: center;
+  transition: transform 0.4s;
+  -webkit-transform-style: preserve-3d;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+.slide {
+    width: 200px;
+    height: 200px;
+}
+.slide_text {
+    color: #fff;
+    font-family: monospace;
+    font-size:18px;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dots label {
+  display: block;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #b0cbdc;
+  margin: 7px;
+  transition: transform 0.2s, color 0.2s;
+}
+/* First */
+#t-1:checked ~ .dots label[for="t-1"] {
+  transform: scale(2);
+  background-color: #fff;
+}
+#t-1:checked ~ .dots label[for="t-2"] {
+  transform: scale(1.5);
+}
+#t-1:checked ~ .pics label[for="t-1"] {
+  z-index: 4;
+}
+#t-1:checked ~ .picss label[for="t-2"] {
+  transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+  z-index: 3;
+}
+#t-1:checked ~ .pics label[for="t-3"] {
+  transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
+  z-index: 2;
+}
+#t-1:checked ~ .pics label[for="t-4"] {
+  transform: translateX(900px) translateZ(-270px) rotateY(-35deg);
+  z-index: 1;
+}
+#t-1:checked ~ .pics label[for="t-5"] {
+  transform: translateX(1200px) translateZ(-360px) rotateY(-45deg);
+}
+/* Second */
+#t-2:checked ~ .dots label[for="t-1"] {
+  transform: scale(1.5);
+}
+#t-2:checked ~ .dots label[for="t-2"] {
+  transform: scale(2);
+  background-color: #fff;
+}
+#t-2:checked ~ .dots label[for="t-3"] {
+  transform: scale(1.5);
+}
+#t-2:checked ~ .pics label[for="t-1"] {
+  transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+}
+#t-2:checked ~ .pics label[for="t-2"] {
+  z-index: 3;
+}
+#t-2:checked ~ .pics label[for="t-3"] {
+  transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+  z-index: 2;
+}
+#t-2:checked ~ .pics label[for="t-4"] {
+  transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
+  z-index: 1;
+}
+#t-2:checked ~ .pics label[for="t-5"] {
+  transform: translateX(900px) translateZ(-270px) rotateY(-35deg);
+}
+/* Third */
+#t-3:checked ~ .dots label[for="t-2"] {
+  transform: scale(1.5);
+}
+#t-3:checked ~ .dots label[for="t-3"] {
+  transform: scale(2);
+  background-color: #fff;
+}
+#t-3:checked ~ .dots label[for="t-4"] {
+  transform: scale(1.5);
+}
+#t-3:checked ~ .pics label[for="t-1"] {
+  transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+}
+#t-3:checked ~ .pics label[for="t-2"] {
+  transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+}
+#t-3:checked ~ .pics label[for="t-3"] {
+  z-index: 3;
+}
+#t-3:checked ~ .pics label[for="t-4"] {
+  transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+  z-index: 2;
+}
+#t-3:checked ~ .pics label[for="t-5"] {
+  transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
+}
+/* Fourth */
+#t-4:checked ~ .dots label[for="t-3"] {
+  transform: scale(1.5);
+}
+#t-4:checked ~ .dots label[for="t-4"] {
+  transform: scale(2);
+  background-color: #fff;
+}
+#t-4:checked ~ .dots label[for="t-5"] {
+  transform: scale(1.5);
+}
+#t-4:checked ~ .pics label[for="t-1"] {
+  transform: translateX(-900px) translateZ(-270px) rotateY(35deg);
+}
+#t-4:checked ~ .pics label[for="t-2"] {
+  transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+}
+#t-4:checked ~ .pics label[for="t-3"] {
+  transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+  z-index: 2;
+}
+#t-4:checked ~ .pics label[for="t-4"] {
+  z-index: 3;
+}
+#t-4:checked ~ .pics label[for="t-5"] {
+  transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+}
+/* Fifth */
+#t-5:checked ~ .dots label[for="t-4"] {
+  transform: scale(1.5);
+}
+#t-5:checked ~ .dots label[for="t-5"] {
+  transform: scale(2);
+  background-color: #fff;
+}
+#t-5:checked ~ .pics label[for="t-1"] {
+  transform: translateX(-1200px) translateZ(-360px) rotateY(45deg);
+}
+#t-5:checked ~ .pics label[for="t-2"] {
+  transform: translateX(-900px) translateZ(-270px) rotateY(35deg);
+  z-index: 1;
+}
+#t-5:checked ~ .pics label[for="t-3"] {
+  transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+  z-index: 2;
+}
+#t-5:checked ~ .pics label[for="t-4"] {
+  transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+  z-index: 3;
+}
+#t-5:checked ~ .pics label[for="t-5"] {
+  z-index: 4;
+}
+
+
+.separ{
+    position: relative;
+    top:-60px;
+    padding: 20px;
+}
+.left_photo{
+    float:left;
+    width: 50%;
+}
+.imgg{
+    width:500px;
+    height:550px;
+}
+
+
+
+
+.foot{
+    background-image:url(istockphoto-1332097112-170667a.jpg)
+}
+.hed{
+    text-align: center;
+    color: white;
+     font-family: 'FashionVictim' !important;
+}
+.fb{
+    width:40px;
+    height: 40px;
+    border-radius: 10px;
+}
+.footer_img{
+    text-align: center;
+}
+.fp{
+    color:white;
+    text-align: center;
+    font-family: monospace;
+}
+
+.dark-mode {
+  background-color: #1d1d1c;
+  color: white;
+}
+.dark_button{
+    font-size: 17px;
+    border: 0px;
+    background-color: #d0dde7;
+    color: #747575;
+    font-family: 'FashionVictim' !important;
+    transition: 0.3s all ease-in-out;
+    padding: 9px 16px;
+}
+.dark_button:hover{
+    color: black;
+    background-color: #b0cbdc;
+}
+.two{
+    overflow: hidden;
+    position:relative;
+    top:-70px;
+    padding: 20px;
+}
+.text_left{
+    width:50%;
+    height:400px;
+    float:left;
+}
+.img_right{
+    width:46%;
+    float:right;
+}

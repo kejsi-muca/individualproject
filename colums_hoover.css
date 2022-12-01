@@ -1,0 +1,67 @@
+.colum{
+    float:left;
+    width:33%;
+    text-align: center;
+    border-right: 2px solid #bcd2e0;
+}
+#hi1:hover{
+    content: url("box.webp");
+    width: 370px;
+    height: 300px;
+    padding: 20px;
+}
+#hi2:hover{
+    content: url("jiu.jpg");
+    width: 370px;
+    height: 300px;
+    padding: 20px;
+}
+#hi3:hover{
+    content: url("judo.jpg");
+    width: 370px;
+    height: 300px;
+    padding: 20px;
+}
+#hi4:hover{
+    content: url("karate.webp");
+    width: 370px;
+    height: 300px;
+    padding: 20px;
+}
+#hi5:hover{
+    content: url("kung.jpg");
+    width: 370px;
+    height: 300px;
+    padding: 20px;
+}
+#hi6:hover{
+    content: url("muai.jpg");
+    width: 370px;
+    height: 300px;
+    padding: 20px;
+}
+#hi7:hover{
+    content: url("aik.jpg");
+    width: 370px;
+    height: 300px;
+    padding: 20px;
+}
+#hi8:hover{
+    content: url("sam.jpg");
+    width: 370px;
+    height: 300px;
+    padding: 20px;
+}
+#hi9:hover{
+    content: url("bacc.jpg");
+    width: 370px;
+    height: 300px;
+    padding: 20px;
+}
+#hi10:hover{
+    content: url("krav.jpeg");
+    width: 370px;
+    height: 300px;
+    padding: 20px;
+}
+

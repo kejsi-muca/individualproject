@@ -1,0 +1,69 @@
+body{
+    font-family: monospace;
+}
+.logo_img{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 565px;
+}
+.dark-mode {
+  background-color: #1d1d1c;
+  color: white;
+}
+.dark_button{
+    font-size: 17px;
+    border: 0px;
+    background-color: #d0dde7;
+    color: #747575;
+    font-weight: bold;
+    font-family: 'FashionVictim' !important;
+    transition: 0.3s all ease-in-out;
+    padding: 9px 16px;
+}
+.dark_button:hover{
+    color: black;
+    background-color: #b0cbdc;
+}
+
+.logo_text{
+    color: white;
+    position: absolute;
+    top: -35px;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'FashionVictim' !important;
+}
+.scroll{
+    position: relative;
+    top:-32px;
+    background-color: #a9d3ee;
+    text-align: center;
+    font-family: monospace;
+    font-size: 19px;
+}
+/*this nav bar code*/
+.nav-work{
+    margin-top: -3px;
+    width:100%;
+    height: 55px;
+    background-color: #d0dde7;
+    font-size: 0;
+}
+.ii {
+    text-align: center; 
+    line-height: 37px;
+}
+nav a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #747575;
+    font-family: 'FashionVictim' !important;
+    transition: 0.3s all ease-in-out;
+    padding: 9px 16px;
+}
+nav a:hover{
+    color: black;
+    background-color: #b0cbdc;
+}

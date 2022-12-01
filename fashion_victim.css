@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'FashionVictim';
+	src: url('./FashionVictim.eot');
+	src: local('FashionVictim'), url('./FashionVictim.woff') format('woff'), url('./FashionVictim.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_79820">Text with this font applied</p> */
+.fontsforweb_fontid_79820 {
+	font-family: 'FashionVictim' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */

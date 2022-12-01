@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fencing is a martial art</title>
+    <link rel="stylesheet" href="css_login.css"> 
+    <link rel="stylesheet" href="fashion_victim.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+    position: absolute;
+    right: 0;
+    top:130px;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.btn {
+    background-color: #b0cbdc;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+a{
+    text-decoration: none; 
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.btn:hover {
+    opacity: 1;
+}
+</style>
+</head>
+<body>
+     <!-- logo image and text   -->
+     <div class="div1">
+    <img alt="lo" class="logo_img" src="pexels-cottonbro-studio-7792259.jpg">
+    <p class="logo_text">FENCING</p>
+    </div>
+    
+    <!--the nav bar with the 4 pages each redericting to another webpage-->
+<div class="nav-work">
+<nav class="ii" style="padding-bottom: -100px;">
+    <a href="index.html">Overview</a>
+    <a href="fencing.html">Fencing</a>
+    <a href="journey.html">Journey&Athletes</a>
+    <a href="login.html">Login</a>
+    <button  class="dark_button" onclick="myFunction()">DARK MODE</button>
+    <div class="animation start-overview"></div> 
+</nav>        
+    </div>
+    
+<!--login form -->
+    <div>
+<form action="/action_page.php" class="container">
+    <h1 style="font-family: 'FashionVictim' !important;">LET`S FENCE</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input style="width:260px; font-family: monospace; font-size: 15px" type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input style="width:260px; font-family: monospace; font-size: 15px" type="password" placeholder="Enter Password" name="psw" required>
+
+    <button style="width:260px" type="submit" class="btn"><a href="index.html">Login</a></button>
+  </form>
+</div>
+
+</body>
+    
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+</html>
